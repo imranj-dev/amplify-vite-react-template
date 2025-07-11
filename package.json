@@ -1,21 +1,19 @@
 {
   "name": "amplify-vite-react-node-mono",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Monorepo with Amplify Gen 2 backend and Vite frontends",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:vite": "pnpm --filter vite dev",
+    "dev:vite-2": "pnpm --filter vite-2 dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "generate:outputs": "npx ampx generate outputs --branch main --app-id <AMPLIFY_BACKEND_APP_ID>"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/imranj-dev/amplify-vite-react-template.git"
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/imranj-dev/amplify-vite-react-template/issues"
-  },
-  "homepage": "https://github.com/imranj-dev/amplify-vite-react-template#readme"
+  "type": "module"
 }
