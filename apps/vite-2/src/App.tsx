@@ -26,6 +26,7 @@ function App() {
           <li key={todo.id}>{todo.content}</li>
         ))}
       </ul>
+      
       <div>
         🥳 App successfully hosted. Try creating a new todo.
         <br />
