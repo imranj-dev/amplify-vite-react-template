@@ -1,0 +1,7 @@
+{
+  "applications": {
+    "my-shared-backend": {
+      "root": "packages/my-shared-backend/amplify"
+    }
+  }
+}
