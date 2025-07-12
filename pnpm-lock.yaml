@@ -152,6 +152,12 @@ importers:
         specifier: ^5.4.10
         version: 5.4.19
 
+  packages/my-shared-backend:
+    dependencies:
+      '@aws-amplify/backend':
+        specifier: ^1.5.0
+        version: 1.16.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-cloudformation@3.844.0)(@aws-sdk/client-s3@3.844.0)(@aws-sdk/types@3.840.0)(aws-cdk-lib@2.204.0(constructs@10.4.2))(constructs@10.4.2)(zod@3.25.17)
+
 packages:
 
   '@ampproject/remapping@2.3.0':
